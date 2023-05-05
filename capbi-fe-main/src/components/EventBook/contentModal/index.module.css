@@ -1,0 +1,253 @@
+.wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-wrapper-contentModal-dutyBook-color);
+    z-index: 99;
+}
+
+.bodyForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100% !important;
+}
+.bodyForm.readOnlyStyle .formField,
+.bodyForm.readOnlyStyle  label,
+.bodyForm.readOnlyStyle  textarea,
+.bodyForm.readOnlyStyle  input {
+    color:var(--text-color);
+    pointer-events: none;
+}
+
+.bodyForm.readOnlyStyle  textarea {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.bodyForm  textarea,
+.bodyForm  input {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.bodyForm.display {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inputArea {
+    padding: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputArea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.inputArea::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    width: 8px;
+    background: var(--vertical-scroll-color);
+  }
+
+.groupDays,
+.finedPersonInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.violation {
+    display: flex;
+    height: 15rem;
+    border-radius: 0.8rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--background-color);
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.closeBtn {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    transform: scale(1.1);
+}
+
+.bodyModal {
+    padding: 4px 0;
+}
+
+.formField:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.formField {
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    height: 54px;
+    width: 49%;
+}
+
+.violation .formField {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.violation .formField textarea {
+    z-index: 1;
+    background: transparent;
+    width: 100%;
+    resize: none;
+    border-radius: 8px;
+}
+
+.groupDate {
+    position: relative;
+    top: 30%;
+}
+
+.inputField {
+    height: 100%;
+    border-radius: 8px;
+    font-size: 17px;
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: var(--label-text-color);
+}
+
+.date {
+    position: absolute;
+    cursor: default;
+}
+
+.inputField::placeholder {
+    opacity: 0.6;
+    font-size: 16px;
+}
+
+.dateText,
+.textPlaceholder {
+    width: 70%;
+}
+
+.dateText::placeholder {
+    opacity: 1;
+}
+
+.textPlaceholder::placeholder {
+    opacity: 0.6;
+}
+
+.labelField {
+    font-weight: 600;
+    line-height: 14px;
+    padding: 0 6px;
+    color: var(--label-text-color);
+    background-color: #fff;
+    font-size: 14px;
+    top: -10px;
+    left: 20px;
+    position: absolute;
+}
+
+.groupBtn {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.validatorText {
+    font-size: 1.3rem;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.btnSubmit {
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background: var(--background-button-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnSubmit:hover {
+    background: var(--background-button-hover-color);
+}
+
+.btnCancel {
+    margin-right: 20px;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--cancel-button-text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCancel:hover {
+    background: var(--placeholder-color);
+    color: var(--white-color);
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .formField:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .groupDays,
+    .finedPersonInfo {
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .formField {
+        width: 100%;
+    }
+
+    .validatorText {
+        top: -15px;
+    }
+}

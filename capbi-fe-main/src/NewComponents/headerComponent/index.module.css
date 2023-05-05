@@ -1,0 +1,73 @@
+.wrapper {
+    background: var(--background-color);
+    padding: 0 2rem 0 .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    border-bottom: 1px solid var(--dash-color);
+}
+
+.customLogo {
+    display: flex;
+    align-items: center;
+}
+
+.sponsorName {
+    width: 6.6rem;
+}
+
+.actionGroup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userName {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.logout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.menuMobileIcon,
+.logoutIcon {
+    display: block;
+    color: var(--icon-color);
+    font-size: var(--plus-font-size);
+}
+
+.logoutIcon:hover {
+    color: var(--icon-hover-color);
+    transform: scale(var(--scale-logout));
+    transition: var(--time-transition-default);
+}
+
+.menuMobileIcon {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .logoutBtn,
+    .logoutIcon {
+        display: none;
+    }
+
+    .menuMobileIcon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .sponsorName {
+        width: var(--height-content-header);
+    }
+}

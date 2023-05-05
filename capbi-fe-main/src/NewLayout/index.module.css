@@ -1,0 +1,43 @@
+.body {
+    position: relative;
+    display: flex;
+    height: 100%;
+    padding-top: 54px;
+    transition: linear 0.4s;
+}
+
+
+.contentArea {
+    flex: 1;
+    width: 100vw;
+}
+
+.closeSideBar {
+    display: block;
+    z-index: 10;
+    position: absolute;
+    bottom: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    color: var(--border-color) !important;
+}
+
+.mobileWrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999999;
+}
+
+@media (max-width:992px) {
+    .sideBarComponent {
+        display: none;
+    }
+
+    .contentArea {
+        padding-left: 0;
+    }
+}

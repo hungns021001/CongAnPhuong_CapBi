@@ -1,0 +1,310 @@
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blackk-color);
+  z-index: 99;
+}
+
+.bodyForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100% !important;
+}
+
+.bodyForm.readOnlyStyle .formField,
+.bodyForm.readOnlyStyle label,
+.bodyForm.readOnlyStyle textarea,
+.bodyForm.readOnlyStyle input {
+  color: var(--text-color);
+  pointer-events: none;
+}
+
+.bodyForm.readOnlyStyle textarea {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.bodyForm textarea,
+.bodyForm input {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.bodyForm.display {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.inputArea {
+  padding: 15px;
+  margin-bottom: 15px;
+  overflow-y: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputArea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.inputArea::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  width: 8px;
+  background: var(--vertical-scroll-color);
+}
+
+.group,
+.finedPersonInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.violation {
+  display: flex;
+  height: 15rem;
+  border-radius: 0.8rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--background-color);
+  padding: 0 15px;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.closeBtn {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.bodyModal {
+  padding: 4px 0;
+}
+
+.formField:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.formField {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  height: 54px;
+  width: 49%;
+}
+
+.violation .formField {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.note .formField textarea {
+  /* transform: translateY(0.6rem); */
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  resize: none;
+  border-radius: 8px;
+  flex: 2;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+}
+
+.groupDate {
+  position: relative;
+  top: 22%;
+}
+
+.note {
+  display: flex;
+  height: 15rem;
+  border-radius: 0.8rem;
+}
+
+.note .formField {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.input {
+  height: 100%;
+  border-radius: 8px;
+  font-size: 17px;
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: var(--label-text-color);
+}
+
+.input::-webkit-scrollbar {
+  background-color: var(--background-color);
+  width: 7px;
+  z-index: -1;
+}
+
+.input::-webkit-scrollbar-thumb {
+  background: var(--background-button-next-hover-color);
+}
+
+.details {
+  display: flex;
+  height: 15rem;
+  border-radius: 0.8rem;
+}
+
+.details .formField {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.details .formField textarea {
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  resize: none;
+  border-radius: 8px;
+  flex: 1;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  height: 100%;
+}
+
+.date {
+  position: absolute;
+  cursor: default;
+}
+
+.input::placeholder {
+  opacity: 0.6;
+  font-size: 16px;
+}
+
+.dateText,
+.textPlaceholder {
+  width: 70%;
+}
+
+.dateText::placeholder {
+  opacity: 1;
+}
+
+.textPlaceholder::placeholder {
+  opacity: 0.6;
+}
+
+.dateTime .formField {
+  width: 100%;
+  height: 5.4rem;
+  z-index: 10;
+}
+
+.labelField {
+  font-weight: 600;
+  line-height: 14px;
+  padding: 0 6px;
+  background-color: var(--white-color);
+  font-size: 14px;
+  top: -10px;
+  left: 20px;
+  position: absolute;
+}
+
+.groupBtn {
+  
+  justify-content: center;
+  position: relative;
+}
+
+.validator {
+  font-size: 1.2rem;
+  position: relative;
+  top: -10px;
+  left: 20px;
+  font-weight: 500;
+  color: var(--grey-color);
+  opacity: 0.8;
+}
+
+.btnCancel {
+  color: var(--placeholder-color);
+  background-color: transparent;
+  margin-right: var(--margin-right-button-default);
+}
+
+.btnCancel:hover {
+  font-weight: 600;
+  color: var(--white-color);
+  background: var(--placeholder-color);
+}
+
+
+@media (max-width: 992px) {
+  .formField:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .group,
+  .finedPersonInfo {
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+
+  .formField {
+    width: 100%;
+  }
+
+  .validator {
+    top: -15px;
+    color: var(--grey-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .validator {
+    top: -1px;
+    color: var(--grey-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.noteModal {
+  color: #92C5CD;
+  margin-bottom: 10px;
+  margin-left: 15px;;
+}
+
+.setText {
+  padding-left: 15px;
+  font-size: 1.3rem;
+}
+
+.setButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
