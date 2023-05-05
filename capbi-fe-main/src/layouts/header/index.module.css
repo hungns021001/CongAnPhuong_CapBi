@@ -1,0 +1,204 @@
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    background-color: var(--white-color);
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    color: var(--text-color);
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    list-style: none;
+}
+
+.listItem li {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.textHeader {
+    font-size: 17px;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 40px;
+}
+
+.logoutBtn {
+    padding: 10px 12px;
+    border-radius: 8px;
+    background-color: transparent;   
+    border: 1px solid #979696; 
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.groupBtn {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    margin-right: 30px;
+}
+
+.navList li {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 20px;
+    padding: 15px 0;
+}
+
+.navItem1,.navItem2,.navItem3 {
+    position: relative;
+}
+
+.navItem1:hover .subNav1{
+    display: block;
+}
+
+.navItem2:hover .subNav2{
+    display: block;
+}
+
+.navItem3:hover .subNav3{
+    display: block;
+}
+
+.subNav1,.subNav2,.subNav3 {
+    position: absolute;
+    top: 50px;
+    background-color: #ccc;
+    list-style: none;
+    width: 200px;
+    display: none;
+    left: -5px;
+    transition: 0.4;
+    border-bottom: 1px solid rgb(62, 62, 255);
+    z-index: 2px;
+}
+
+.subNav1 li,.subNav2 li,.subNav3 li {
+    padding-left: 10px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.subNav1 li:hover,.subNav2 li:hover,.subNav3 li:hover {
+    background-color: #646464;
+    color: #c7c7c7;
+}
+
+.mobileMenu {
+    display: none;
+    z-index: 100px;
+}
+
+.navBox {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    background-color: #999898;
+    z-index: 101px;
+    width: 300px;
+    box-shadow: 6px 6px 6px #0000;
+    overflow-y: auto;
+}
+
+.navMobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navBox::-webkit-scrollbar{
+    width:10px
+  }
+  .navBox::-webkit-scrollbar-thumb{
+    background-color:black;
+    border-radius:100rem;
+     
+  }
+
+.navMobile ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.itemMobile {
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.subnav1Mobile {
+    font-size: 14px;
+    background-color: #b6b6b6;
+    color: #242424;
+    border-bottom:3px solid violet;
+    transition: 0.4s;
+    padding: 10px 0 !important;
+}
+
+.subnav1Mobile li {
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.subnav1Mobile li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width:1100px) {
+    .groupBtn{
+        display: none;
+    }
+
+    .mobileMenu {
+        cursor: pointer;
+        font-size: 25px;
+        display: block;
+    }
+}
+
+.logoutBtn.logoutMb {
+    border-color: #fff;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.closeNavMb {
+    text-align: right;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

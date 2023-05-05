@@ -1,0 +1,63 @@
+.wrapper {
+	--distance-between-icon-and-margin: 0.2rem;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: var(--background-overlay-color);
+	z-index: var(--slide-images-z-index);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imageFrame {
+	max-width: var(--max-width-image-frame-of-slide);
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 0.4rem;
+}
+
+.imageFrame img {
+	object-fit: scale-down;
+	width: 100%;
+}
+
+.iconClose,
+.arrowToLeft,
+.arrowToRight {
+	position: absolute;
+	font-size: var(--icons-in-slide-image-font-size);
+	color: var(--label-text-color);
+	opacity: 0.7;
+	top: 50%;
+	right: var(--distance-between-icon-and-margin);
+	z-index: var(--second-image-z-index-in-td-tag);
+}
+
+.iconClose {
+	top: 0;
+}
+
+.arrowToLeft {
+	left: var(--distance-between-icon-and-margin);
+}
+
+.iconClose:hover,
+.arrowToLeft:hover,
+.arrowToRight:hover {
+	cursor: pointer;
+	opacity: 1;
+	color: var(--border-color);
+}
+
+.arrowToLeft.disableArrowLeft,
+.arrowToRight.disableArrowRight {
+	cursor: default;
+	opacity: 0.2;
+	color: var(--label-text-color);
+}

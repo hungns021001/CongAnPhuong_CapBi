@@ -1,0 +1,407 @@
+.sponsorLogo {
+    width: 17;
+}
+
+.loginForm form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.formTag {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.titlePage {
+    margin-bottom: 20px !important;
+    font-size: 20px !important;
+}
+
+.loginForm h2 {
+    user-select: none;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.userName {
+    padding: 8px 6px;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.userName input {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.password {
+    position: relative;
+    padding: 8px 6px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid rgba(146, 197, 205, 1) !important;
+    height: 4.4rem;
+    margin-bottom: 1.6rem;
+}
+
+
+.label-input {
+    position: absolute;
+    top: -13px;
+    left: 18px;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    background-color: var(--white-color);
+}
+
+.password input {
+    outline: none;
+    border: none;
+    width: 100%;
+
+    background-color: transparent !important;
+    color: var(--text-color);
+}
+
+.iconShowPass {
+    cursor: pointer;
+}
+
+.iconShowPass:hover {
+    opacity: 0.7;
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center;
+    position: relative;
+}
+ 
+.setText {
+    position: absolute;
+    left: 0;
+    top: -25px;
+    user-select: none;
+    pointer-events: none;
+    font-size: 1.1rem;
+}
+
+.btnGroup .btn-cancel {
+    color: var(--placeholder-color);
+    background-color: transparent;
+    margin-right: var(--margin-right-button-default);
+}
+
+.btnGroup .btn-cancel:hover {
+    font-weight: 600;
+    color: var(--white-color);
+    background: var(--placeholder-color);
+}
+
+/* .btnGroup .btn-cancel {
+    margin-right: 20px;
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--cancel-button-text-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnGroup .btn-cancel:hover {
+    background: var(--cancel-button-background-hover-color);
+    color: var(--cancel-button-text-hover-color);
+    opacity: 0.8;
+    font-weight: 600;
+} */
+
+.register {
+    font-size: 14px;
+    user-select: none;
+}
+
+.select {
+    cursor: pointer;
+    height: 4rem;
+    border-radius: 0.8rem;
+    outline: none;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid rgb(255, 255, 255, 0.1) !important;
+
+
+    width: 100%;
+}
+
+.backBtn {
+    background-color: #e9e9e9;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 600;
+    transform: translate(-340%, -100%);
+    -webkit-transform: translate(-340%, -100%);
+    -moz-transform: translate(-340%, -100%);
+    -ms-transform: translate(-340%, -100%);
+    -o-transform: translate(-340%, -100%);
+}
+
+.linkBack {
+    padding: 12px 15px;
+}
+
+.linkBack img.back {
+    width: 32px;
+    display: flex;
+}
+
+.linkBack:hover {
+    opacity: 0.8;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    user-select: none;
+    position: relative;
+}
+
+.btnBacKHome {
+    user-select: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--sidebar-text-color);
+    color: var(--sidebar-text-hover-color);
+    opacity: 0.9;
+    transition: 0.12s;
+    font-weight: 600;
+}
+
+.error {
+    border: 1px solid var(--validate-error);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.boxLogin {
+    width: 100%;
+    padding: 1.5rem 1.5rem 0 !important;
+}
+
+.sponsorLogo {
+    width: 17rem;
+}
+
+.loginForm form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    margin-top: 40px;
+}
+
+.loginForm h2 {
+    user-select: none;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100;
+}
+
+.contentbody {
+    width: 100%;
+    height: 100%;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.userName {
+    padding: 8px 6px;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--sidebar-text-color);
+    height: 4.4rem;
+}
+
+.userName input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    color: black;
+}
+
+.password {
+    padding: 8px 6px;
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    height: 4.4rem;
+}
+
+.password input {
+    flex: 2;
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-color);
+    margin-right: 3px;
+}
+
+.password input::placeholder,
+.userName input::placeholder {
+    color: var(--text-color);
+}
+
+.iconShowPass {
+    cursor: pointer;
+    color: var(--icon-color);
+    opacity: 0.7;
+    padding-right: 3px
+}
+
+.iconShowPass:hover {
+    opacity: 1;
+}
+
+.btnGroup button.disabled {
+    cursor: no-drop;
+    color: var(--sidebar-text-color);
+    background: transparent;
+}
+
+.btnGroup button.disabled {
+    border: 1px solid var(--background-login-button);
+}
+
+.btnGroup button.activeButton {
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.btnGroup button.activeButton:hover span {
+    transform: scale(1.05);
+    display: block;
+    transition: 0.1s;
+}
+
+.errorUserName {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: var(--validate-error);
+
+    top: 0.5rem;
+    margin-top: -22px;
+}
+
+.errorFullName {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    color: var(--validate-error);
+    margin-top: -22px;
+    position: absolute;
+    bottom: -22px;
+}
+
+.register {
+    font-size: 14px;
+    user-select: none;
+}
+
+.titleHead {
+    color: #dbcaca;
+    margin-bottom: 20px !important;
+}
+
+.labelInput {
+    color: var(--tr-tag-color);
+    text-align: left;
+    font-size: 15px;
+    font-weight: 600;
+    user-select: none;
+}
+
+@media (max-width: 992px) {
+    .loginForm {
+        width: 100%;
+    }
+
+    .btnBacKHome {
+        left: 20px;
+    }
+}
+
+@media only screen and (min-width: 415px) and (max-width: 600px) {
+    .boxLogin {
+        padding: 0 0 2rem;
+        min-width: 30rem;
+    }
+
+    .sponsorLogo {
+        width: 11rem;
+    }
+
+    .loginForm form {
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .boxLogin {
+        min-width: 100%;
+        width: 100%;
+        padding: 0 0 2rem;
+    }
+
+    .sponsorLogo {
+        width: 13rem;
+    }
+
+    .loginForm form {
+        padding-top: 4rem;
+    }
+}

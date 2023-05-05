@@ -1,0 +1,595 @@
+.wrapper {
+    background: var(--background-color);
+    padding: 1rem 4rem;
+    height: auto;
+  }
+  .content {
+    overflow: hidden;
+    height: auto;
+  }
+  .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+    border-bottom: 1px solid var(--dash-color);
+    height: 6rem;
+    padding-bottom: 0.8rem;
+    text-align: center;
+  }
+  .contentHeader > h2 {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    line-height: 3rem;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  
+  .searchAndAdd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30rem;
+    min-width: 30rem;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background: var(--white-color);
+    padding: 0.4rem 1.2rem;
+    border-radius: 1.2rem;
+    margin-right: 1rem;
+  }
+  .search > input {
+    height: 100%;
+    flex: 1;
+    color: var(--text-color);
+  }
+  .search > input::placeholder {
+    color: var(--icon-color);
+    font-weight: 500;
+  }
+  .searchicon {
+    font-size: var(--text-color);
+    cursor: pointer;
+    color: var(--icon-color);
+    border-left: 1px solid var(--border-color);
+    padding-left: 0.6rem;
+    font-size: 2.8rem;
+  }
+  .addnew {
+    border-radius: 50%;
+    border: 2px solid var(--white-color);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    background: var(--background-button-color);
+  }
+  
+  .addnew:hover {
+    background: var(--background-button-hover-color);
+    transform: scale(1.04);
+  }
+  
+  .addnew > button {
+    color: var(--icon-color);
+    font-size: 3.4rem;
+    background: transparent;
+    line-height: 1rem;
+    font-weight: 300;
+  }
+  
+  .addnew > button:hover {
+    cursor: pointer;
+  }
+  
+  .contentbody {
+    flex: 1;
+    overflow-x: auto;
+    padding-bottom: 0.2rem;
+  }
+  
+  .contentbody::-webkit-scrollbar {
+    height: 1.4rem;
+    background-color: var(--background-color);
+  }
+  
+  .contentbody::-webkit-scrollbar-thumb {
+    height: 8px;
+    background: var(--background-button-next-hover-color);
+    border-radius: 1rem;
+  }
+  
+  .tableContent {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .contentbody {
+    width: 100%;
+  }
+  
+  .contentbody > table > thead > tr {
+    height: 5rem;
+  }
+  
+  .contentbody > table > thead > tr > th:nth-child(1) {
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+  }
+  
+  .contentbody > table > thead > tr > th {
+    font-size: 1.6rem;
+    padding: 0 0.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    background: var(--th-tag-background-color);
+  }
+  
+  .stt {
+    min-width: 3.6rem;
+    width: 3.6rem;
+    text-align: center;
+  }
+  
+  .seaOfControl
+  {
+    min-width: 15rem ;
+    width: 15rem;
+    text-align: center;
+  }
+  .dateOfViolation {
+    min-width: 25rem;
+    width: 25rem;
+    text-align: center;
+  }
+  .leaderSign {
+    min-width: 18rem;
+    max-width: 18rem;
+    width: 18rem;
+  }
+  .errorViolation{
+   
+  }
+  .violatorName{
+     min-width: 20rem;
+    max-width: 20rem;
+    width: 18rem;
+  }
+  .applicantName{
+    min-width: 18rem;
+    max-width: 18rem;
+    width: 18rem;
+  }
+  .commandSettlement{
+    min-width: 20rem;
+    max-width: 20rem;
+    width: 20rem;
+  }
+  .OfficersReceiveStickers{
+    min-width: 18rem;
+    max-width: 18rem;
+    width: 18rem;
+  }
+  
+  .receiver {
+    min-width: 18rem;
+    max-width: 18rem;
+    width: 18rem;
+  }
+  .errorViolation {
+    min-width: 25rem;
+    max-width: 25rem;
+    width: 25rem;
+  }
+  .confirmationDate {
+    min-width: 18rem;
+    max-width: 18rem;
+    width: 18rem;
+  }
+  .gender {
+    min-width: 10rem;
+    max-width: 10rem;
+    width: 10rem;
+  }
+  .LocationOfViolation {
+    min-width: 15rem;
+    width: 15rem;
+    
+    text-align: center; 
+    
+  }
+  
+  .editAndDelete {
+    min-width: 4rem;
+    max-width: 5rem;
+    width: 5rem;
+  }
+  
+  .contentbody > table {
+    border-spacing: 0 0.2rem;
+    border:1px solid black;
+  }
+  
+  .contentbody > table > tbody > tr {
+    background: var(--tr-tag-color);
+    height: 5rem;
+    border:1px solid black;
+    
+  }
+  
+  .contentbody > table > tbody > tr:hover {
+    cursor: pointer;
+    box-shadow: 0.4rem 0.8rem 2.2rem var(--shadow-color);
+    background: var(--white-color);
+    border:1px solid black;
+  }
+  
+  .contentbody > table > tbody >  tr:hover td.contentStt {
+    border-left: 0.4rem solid var(--main-color);
+    border:1px solid black;
+  }
+  
+  .contentbody > table > tbody > tr > td {
+    color: var(--text-color);
+    border:1px solid black;
+  }
+  
+  .contentStt {
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
+    text-align: center;
+    
+  }
+  
+  
+  .contentDateOfViolation{
+    text-align: center;
+    padding: 0px 4px;
+  }
+  
+  .contentLocationOfViolation {
+   
+    width: 20rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .contentSeaOfControl {
+    text-align: center;
+    width: 17rem;
+    max-width: 17rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .contentGender {
+    text-align: center;
+    width: 6rem;
+  }
+  .contentConfirmationDate {
+    text-align: center;
+    width: 20rem;
+  }
+  .contentErrorViolation {
+    
+    width: 20rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .contentLeaderSign {
+    
+    width: 20rem;
+    max-width: 16rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .contentCommandSettlement{ 
+    
+    width: 20rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .contentApplicantName{
+    
+    
+    width: 20rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .contentViolatorName{
+     
+    
+    width: 20rem;
+    max-width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align: center;
+  }
+  .contentEditAndDelete {
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    min-width: 6rem;
+    max-width: 6rem;
+    width: 6rem;
+    text-align: center;
+  }
+  
+  .contentEditAndDelete > .edit {
+    color: var(--text-color);
+    margin-right: 0.6rem;
+    font-size: 18px;
+  }
+  
+  .contentEditAndDelete > .delete {
+    color: var(--text-color);
+    font-size: 18px;
+  }
+  
+  .pagination {
+    margin-top: 1.6rem;
+  }
+  
+  .loadingArea {
+    pointer-events: none;
+    text-align: center;
+    background: var(--th-tag-background-color);
+  }
+  
+  .searchAndAddMobile {
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .groupBtnLeft,
+  .groupBtnRight {
+      display: flex;
+  }
+  
+  .groupBtnLeft {
+      gap:8px;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .startExportDate,
+  .endExportDate {
+      display: flex;
+     
+  }
+  
+  .startExportDate,
+  .endExportDate {
+    display: flex;
+    align-items: center;
+  }
+  
+  .startExportDate span,
+  .endExportDate span {
+    margin-right: 0.4rem;
+    font-size: 1.6rem;
+  }
+  
+  .iconExport {
+    font-size: 1.8rem;
+    color: var(--text-color);
+  }
+  
+  .export {
+    display: flex;
+    align-items: center;
+  }
+  
+  .export span {
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+  }
+  
+  .btnExportFile {
+    padding: 4px 8px;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--white-color);
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    background: var(--white-color);
+    cursor: pointer;
+    font-size: 1.6rem;
+    transition: 0.1s;
+  }
+  
+  .btnExportFile:hover {
+    transform: scale(1.05);
+  }
+  
+  .inputDateExport {
+      width: 12rem;
+      height: 4rem;
+      border-radius: 1.2rem;
+      color: var(--text-color);
+      padding: 0 0.8rem;
+  }
+  
+  .inputField {
+    width: 160px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    height: 4rem;
+    border-radius: 12px;
+    background-color: #fff;
+    color: var(--text-color);
+    outline: none;
+    margin-right: 11px;
+  }
+  
+  .inputField option {
+    font-size: 14px;
+    background-color: #fff;
+    color: var(--text-color);
+    border: none;
+  }
+  
+  @media (max-width: 992px) {
+    .wrapper {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .inputField option {
+      font-size: 12px;
+      width: 80px;
+  }
+  }
+  
+  
+  
+  @media (max-width:1100px) {
+    .searchAndAddMobile {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .groupBtnRight {
+    width: 100%;
+    flex: 1;
+  }
+  
+  .groupBtnLeft {
+    justify-content: flex-start;
+  }
+  
+  .startExportDate,
+  .endExportDate 
+  {
+          display: flex;
+          margin-left: 12px;
+      }
+  
+      
+  
+  .searchAndAddMobile .search {
+    flex: 1;
+  }
+  
+  .groupBtnLeft {
+    gap:0px;
+  }
+  
+  .btnExportFile {
+    margin: 0;
+  }
+  }
+  
+  @media (max-width: 645px) {
+    .groupBtnLeft {
+        justify-content: center;
+    }
+  
+    .export span {
+        display: none;
+    }
+  }
+  
+  @media (max-width: 381px) {
+    .export span {
+        display: none;
+    }
+  }
+  
+  @media (max-width: 432px) {
+    .groupBtnLeft {
+        justify-content: space-between;
+    }
+  
+    .startExportDate input,
+    .endExportDate input {
+        width: 12.4rem;
+    }
+  }
+  
+  @media (max-width: 577px) {
+    .groupBtnLeft {
+        justify-content: center;
+        height: 6.6rem;
+    }
+  
+    .export span {
+        display: block;
+    }
+  
+    .startExportDate,
+    .endExportDate,
+    .export {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    .inputDateExport {
+        width: 15rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contentHeader h2 {
+      font-size: 2rem;
+    }
+  
+    .contentbody > table > thead > tr > th {
+      font-size: 1.5rem;
+    }
+  
+    .contentbody > table > tbody > tr > td {
+      font-size: 1.5rem;
+    }
+  
+    .searchAndAdd {
+      display: none;
+    }
+  
+    .searchAndAddMobile {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .searchAndAddMobile .search {
+      flex: 1;
+    }
+  
+    .contentHeader > h2 {
+      text-align: center;
+    }
+  
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 0.4rem;
+    }
+  }
+  

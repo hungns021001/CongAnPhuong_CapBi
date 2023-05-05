@@ -1,0 +1,15 @@
+.tdInput {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 0;
+    height: 2.2rem;
+    line-height: 100%;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.tdInput:focus {
+    background: var(--focus-color);
+    color: var(--white-color);
+}

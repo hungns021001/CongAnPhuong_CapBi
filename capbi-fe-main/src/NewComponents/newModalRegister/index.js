@@ -1,0 +1,29 @@
+import cn from "classnames";
+import styles from "./index.module.css";
+import { useEffect, useRef } from "react";
+import ModalRegister from "@/components/modalRegister";
+
+function ModalRegisterNew({ data, handleCloseModal,handleUpdate }) {
+    const divRef = useRef(null);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (divRef.current && !divRef.current.contains(event.target)) handleCloseModal();
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [divRef]);
+
+    return (
+        <div className={cn(styles.wrapper)}>
+            <div className={cn(styles.boxContent)} ref={divRef}>
+                <div className={cn(styles.bodyModal)}><ModalRegister data={data} handleUpdate={handleUpdate} handleCloseModal={handleCloseModal} /></div>
+            </div>
+        </div>
+    );
+}
+
+export default ModalRegisterNew;

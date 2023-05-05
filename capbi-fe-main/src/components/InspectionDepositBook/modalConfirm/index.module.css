@@ -1,0 +1,85 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.boxConfirm {
+    width: 400px;
+    padding: 25px 0 12px;
+    background-color: var(--white-color);
+    border-radius: 8px;
+}
+
+.boxHeader {
+    text-align: center;
+    padding: 30px 20px 0;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.groupBtn {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.btnDelete {
+    padding: 12px 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.1s;
+    font-weight: 500;
+    display: block;
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    background: var(--background-button-submit-color);
+    font-weight: 600;
+    margin-left: 2rem;
+    width: 8rem;
+    text-align: center;
+}
+
+.btnDelete:hover {
+    background: var(--background-button-submit-hover-color);
+}
+
+.btnCancel {
+    padding: 12px 2rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    transition: 0.1s;
+    font-weight: 600;
+    display: block;
+    border: none;
+    outline: none;
+    color: var(--cancel-button-text-color);
+    background-color: transparent;
+    width: 8rem;
+    text-align: center;
+}
+
+.btnCancel:hover {
+    background: var(--cancel-button-background-hover-color);
+    color: var(--cancel-button-text-hover-color);
+    opacity: 0.8;
+}
+
+.iconAlert {
+    width: 80px;
+}
+
+@media (max-width:992px) {
+    .boxConfirm {
+        margin: 0 8px;
+    }
+}
