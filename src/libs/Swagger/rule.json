@@ -1,0 +1,2954 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "basePath": "/",
+  "paths": {
+    "/api/statusBookRouter/create-status-book-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "DateTime": {
+                  "example": "any"
+                },
+                "PersonOnDuty": {
+                  "example": "any"
+                },
+                "Details": {
+                  "example": "any"
+                },
+                "Handler": {
+                  "example": "any"
+                },
+                "Note": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/statusBookRouter/get-status-book": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/statusBookRouter/update-status-book/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/statusBookRouter/show/id": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/statusBookRouter/delete/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/statusBookRouter/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/role/get-role": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/create-shift-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "hourOnDuty": {
+                  "example": "any"
+                },
+                "FullName": {
+                  "example": "any"
+                },
+                "Total": {
+                  "example": "any"
+                },
+                "Present": {
+                  "example": "any"
+                },
+                "Absent": {
+                  "example": "any"
+                },
+                "contentOfShift": {
+                  "example": "any"
+                },
+                "informationOfShift": {
+                  "example": "any"
+                },
+                "directiveInformation": {
+                  "example": "any"
+                },
+                "fullnameHandover": {
+                  "example": "any"
+                },
+                "fullnameReceiver": {
+                  "example": "any"
+                },
+                "leadShift": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/get-shift": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/show/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/update-shift/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "hourOnDuty": {
+                  "example": "any"
+                },
+                "FullName": {
+                  "example": "any"
+                },
+                "Total": {
+                  "example": "any"
+                },
+                "Present": {
+                  "example": "any"
+                },
+                "Absent": {
+                  "example": "any"
+                },
+                "contentOfShift": {
+                  "example": "any"
+                },
+                "informationOfShift": {
+                  "example": "any"
+                },
+                "directiveInformation": {
+                  "example": "any"
+                },
+                "fullnameHandover": {
+                  "example": "any"
+                },
+                "fullnameReceiver": {
+                  "example": "any"
+                },
+                "leadShift": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/shift/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/create-tracker-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "example": "any"
+                },
+                "dispatchID": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "subject": {
+                  "example": "any"
+                },
+                "signer": {
+                  "example": "any"
+                },
+                "recipients": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/get-tracker": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/show/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/update-tracker/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "example": "any"
+                },
+                "dispatchID": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "subject": {
+                  "example": "any"
+                },
+                "signer": {
+                  "example": "any"
+                },
+                "recipients": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/tracker/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/create-sanctions-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "decisionId": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "staying": {
+                  "example": "any"
+                },
+                "nation": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "job": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "punisher": {
+                  "example": "any"
+                },
+                "processingForm": {
+                  "example": "any"
+                },
+                "fullnamePolice": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/get-sanctions": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/show/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/update-sanctions/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "decisionId": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "staying": {
+                  "example": "any"
+                },
+                "nation": {
+                  "example": "any"
+                },
+                "country": {
+                  "example": "any"
+                },
+                "job": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "punisher": {
+                  "example": "any"
+                },
+                "processingForm": {
+                  "example": "any"
+                },
+                "fullnamePolice": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/sanctions/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/dispatch/get-dispatch": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/dispatch/show/id": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/dispatch/create-dispatch-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "example": "any"
+                },
+                "dispatchID": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "subject": {
+                  "example": "any"
+                },
+                "agencyissued": {
+                  "example": "any"
+                },
+                "receiver": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/dispatch/update-dispatch/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "example": "any"
+                },
+                "dispatchID": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "subject": {
+                  "example": "any"
+                },
+                "agencyissued": {
+                  "example": "any"
+                },
+                "receiver": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/dispatch/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/dispatch/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/immigrantRouter/create-immigrant-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "FullName": {
+                  "example": "any"
+                },
+                "PirthDay": {
+                  "example": "any"
+                },
+                "Gender": {
+                  "example": "any"
+                },
+                "Country": {
+                  "example": "any"
+                },
+                "Passport": {
+                  "example": "any"
+                },
+                "EntryDate": {
+                  "example": "any"
+                },
+                "VisaDateForm": {
+                  "example": "any"
+                },
+                "VisaDateTo": {
+                  "example": "any"
+                },
+                "SojournDateFrom": {
+                  "example": "any"
+                },
+                "SojournDateTo": {
+                  "example": "any"
+                },
+                "GuarantorName": {
+                  "example": "any"
+                },
+                "GuarantorAddress": {
+                  "example": "any"
+                },
+                "GuarantorRelations": {
+                  "example": "any"
+                },
+                "Note": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/immigrantRouter/get-immigrant": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/immigrantRouter/update-immigrant/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "FullName": {
+                  "example": "any"
+                },
+                "PirthDay": {
+                  "example": "any"
+                },
+                "Gender": {
+                  "example": "any"
+                },
+                "Country": {
+                  "example": "any"
+                },
+                "Passport": {
+                  "example": "any"
+                },
+                "EntryDate": {
+                  "example": "any"
+                },
+                "VisaDateForm": {
+                  "example": "any"
+                },
+                "VisaDateTo": {
+                  "example": "any"
+                },
+                "SojournDateFrom": {
+                  "example": "any"
+                },
+                "SojournDateTo": {
+                  "example": "any"
+                },
+                "GuarantorName": {
+                  "example": "any"
+                },
+                "GuarantorAddress": {
+                  "example": "any"
+                },
+                "GuarantorRelations": {
+                  "example": "any"
+                },
+                "Note": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/immigrantRouter/show/id": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/immigrantRouter/delete/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/immigrantRouter/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handling/create-handle": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateViolation": {
+                  "example": "any"
+                },
+                "addressViolation": {
+                  "example": "any"
+                },
+                "nameOfViolation": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "fullnamePolice": {
+                  "example": "any"
+                },
+                "result": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handling/get-handling": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handling/show/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/handling/update-handle/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "dateViolation": {
+                  "example": "any"
+                },
+                "addressViolation": {
+                  "example": "any"
+                },
+                "nameOfViolation": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "fullnamePolice": {
+                  "example": "any"
+                },
+                "result": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handling/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handling/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizenpassport/get-passport": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizenpassport/get-passport-by-name/{name}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/citizenpassport/update-passport/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "fullName": {
+                  "example": "any"
+                },
+                "birthday": {
+                  "example": "any"
+                },
+                "gender": {
+                  "example": "any"
+                },
+                "staying": {
+                  "example": "any"
+                },
+                "confirmationDate": {
+                  "example": "any"
+                },
+                "fullNamePolice": {
+                  "example": "any"
+                },
+                "leaderSign": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizenpassport/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/citizenpassport/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nothandle/create-nothandle": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "DateOfViolation": {
+                  "example": "any"
+                },
+                "Violation": {
+                  "example": "any"
+                },
+                "AddressViolation": {
+                  "example": "any"
+                },
+                "Note": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nothandle/get-nothandle": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nothandle/update-nothandle/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/nothandle/show/id": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/nothandle/delete/id": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nothandle/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/accreditation/create-accreditation": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "DateSend": {
+                  "example": "any"
+                },
+                "LicensePlates": {
+                  "example": "any"
+                },
+                "Violation": {
+                  "example": "any"
+                },
+                "Receiver": {
+                  "example": "any"
+                },
+                "FinePaymentDate": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/accreditation/get-accreditation": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/accreditation/update-accreditation/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/accreditation/show/{id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/accreditation/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/accreditation/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/assign/assign-handle": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "time": {
+                  "example": "any"
+                },
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/user/get-list-name": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/assign/update-handle/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/complete-task/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "complete": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/assign/received-task/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "complete": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/assign/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/confirmation/create-confirmation-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "Date": {
+                  "example": "any"
+                },
+                "FullName": {
+                  "example": "any"
+                },
+                "Gender": {
+                  "example": "any"
+                },
+                "Birthday": {
+                  "example": "any"
+                },
+                "Staying": {
+                  "example": "any"
+                },
+                "GrantReason": {
+                  "example": "any"
+                },
+                "Verifier": {
+                  "example": "any"
+                },
+                "LeaderSign": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/confirmation/get-confirmation": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/confirmation/update-confirmation/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/confirmation/get-confirmation-by-name/{name}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/confirmation/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/confirmation/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/situation/create-handle": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "forceOnDuty": {
+                  "example": "any"
+                },
+                "caseName": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "receive": {
+                  "example": "any"
+                },
+                "custody": {
+                  "example": "any"
+                },
+                "returns": {
+                  "example": "any"
+                },
+                "handOver": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/situation/get-situation/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/situation/update-situation/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "forceOnDuty": {
+                  "example": "any"
+                },
+                "caseName": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "content": {
+                  "example": "any"
+                },
+                "receive": {
+                  "example": "any"
+                },
+                "custody": {
+                  "example": "any"
+                },
+                "returns": {
+                  "example": "any"
+                },
+                "handOver": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/situation/show": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/situation/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/situation/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/resident/create-resident-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "host": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "citizenNumber": {
+                  "example": "any"
+                },
+                "violationer": {
+                  "example": "any"
+                },
+                "formProcessing": {
+                  "example": "any"
+                },
+                "policeCheck": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/resident/get-resident": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/resident/update-resident/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "address": {
+                  "example": "any"
+                },
+                "host": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "citizenNumber": {
+                  "example": "any"
+                },
+                "violationer": {
+                  "example": "any"
+                },
+                "formProcessing": {
+                  "example": "any"
+                },
+                "policeCheck": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/resident/show": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/resident/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/resident/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/calendar/create-handle": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "force": {
+                  "example": "any"
+                },
+                "mission": {
+                  "example": "any"
+                },
+                "note": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/calendar/get-calendar": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/calendar/update-calendar/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "location": {
+                  "example": "any"
+                },
+                "force": {
+                  "example": "any"
+                },
+                "mission": {
+                  "example": "any"
+                },
+                "note": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/calendar/show": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/calendar/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/administrative/create-administrative-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "dispatchId": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "agencyIssued": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "settlementTime": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/administrative/get-administrative": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/administrative/update-administrative/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "date": {
+                  "example": "any"
+                },
+                "dispatchId": {
+                  "example": "any"
+                },
+                "releaseDate": {
+                  "example": "any"
+                },
+                "agencyIssued": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "settlementTime": {
+                  "example": "any"
+                },
+                "result": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/administrative/show": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/administrative/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/administrative/exports": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "startDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "startDay": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "endDay",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "endDay": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handlingonday/create-administrative-handler": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "licensePlates": {
+                  "example": "any"
+                },
+                "dateOfViolation": {
+                  "example": "any"
+                },
+                "addressOfViolation": {
+                  "example": "any"
+                },
+                "violation": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "custody": {
+                  "example": "any"
+                },
+                "handoverUnit": {
+                  "example": "any"
+                },
+                "receiver": {
+                  "example": "any"
+                },
+                "amount": {
+                  "example": "any"
+                },
+                "picture": {
+                  "example": "any"
+                },
+                "result": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handlingonday/get-administrative/page={number}": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handlingonday/update-administrative/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "licensePlates": {
+                  "example": "any"
+                },
+                "dateOfViolation": {
+                  "example": "any"
+                },
+                "addressOfViolation": {
+                  "example": "any"
+                },
+                "violation": {
+                  "example": "any"
+                },
+                "fullName": {
+                  "example": "any"
+                },
+                "custody": {
+                  "example": "any"
+                },
+                "handoverUnit": {
+                  "example": "any"
+                },
+                "receiver": {
+                  "example": "any"
+                },
+                "amount": {
+                  "example": "any"
+                },
+                "picture": {
+                  "example": "any"
+                },
+                "result": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/api/handlingonday/show": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/handlingonday/delete/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/handlingonday/verify/{id}": {
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "done": {
+                  "example": "any"
+                }
+              }
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {}
+      }
+    }
+  }
+}
